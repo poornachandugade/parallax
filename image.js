@@ -18,8 +18,8 @@ $(document).scroll(function () {
     else{
       $('.p1t2,.p2t2').fadeIn();
     }
-
-  $('.p3t1').css('transform','translateY('+(x-1637)/2+'px)');
+  var o = $('.p3t1').offset();
+  $('.p3t1').css('transform','translateY('+(x-(o.top))/2+'px)');
 
 
   $('.p4t1').css('transform','translateY('+(x-2237)/2+'px)');
