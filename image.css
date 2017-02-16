@@ -82,11 +82,12 @@ h1,p{
   color: black;/* Gecko Browsers */
 }
 .content1{
-  max-height:600px;
+  max-height:300px;
   padding: 30px 10px 10px 10px;
   font-weight: 700;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
+  overflow:hidden;
 }
 .content1 h1{
   text-align: center;
