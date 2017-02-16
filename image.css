@@ -82,6 +82,7 @@ h1,p{
   color: black;/* Gecko Browsers */
 }
 .content1{
+  max-height:600px;
   padding: 30px 10px 10px 10px;
   font-weight: 700;
   font-family: 'Raleway', sans-serif;
