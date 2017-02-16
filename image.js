@@ -11,7 +11,8 @@ $(document).scroll(function () {
   else{
     $('.p1t1').fadeIn();
   }
-    $('.p2t2,.p1t2').css('transform','translateY('+y/6+'px)');
+  var m = $('.p1t2').offset();
+    $('.p2t2,.p1t2').css('transform','translateY('+(x-(m.top))/2+'px)');
     if(x>1167){
       $('.p1t2,.p2t2').fadeOut();
     }
@@ -21,8 +22,8 @@ $(document).scroll(function () {
   var o = $('.p3t1').offset();
   $('.p3t1').css('transform','translateY('+(x-(o.top))/2+'px)');
 
-
-  $('.p4t1').css('transform','translateY('+(x-2237)/2+'px)');
+  var f = $('.p4t1').offset();
+  $('.p4t1').css('transform','translateY('+(x-(f.top))/2+'px)');
     console.log(x);
 });
 
